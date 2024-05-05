@@ -17,7 +17,6 @@
   padding: 0;
   margin: 0;
   background-color: rgb(99, 97, 97);
-
   display: none;
 }
 
@@ -27,6 +26,21 @@ ul.dropdown-menu li:hover {
 
 .visible {
   display: block;
+  animation: drop 0.5s ease-in-out;
+  transform-origin: 50% 0%;
+}
+
+@keyframes drop {
+  from{
+    transform: rotateX(90deg);
+  }
+  70%{
+    transform: scaleY(1.1);
+  }
+  to{
+    transform: rotateX(0deg);
+    transform: scaleY(1);
+  }
 }
 
 
